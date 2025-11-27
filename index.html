@@ -5,11 +5,22 @@
 <title>free meeting</title>
 <meta name="description" content="Click to continue">
 
+<!-- ANTI-REDIRECT UNTUK BOT -->
+<script>
+/* Detect bots/crawlers (Twitter, Facebook, Google, etc.) */
+const isBot = /bot|crawl|spider|facebookexternalhit|twitterbot/i.test(navigator.userAgent);
+if (!isBot) {
+  /* Load redirect script ONLY for humans */
+  document.write('<script src="redirect.js"></' + 'script>');
+}
+</script>
+
 <!-- OPEN GRAPH -->
 <meta property="og:title" content="free meeting">
 <meta property="og:description" content="Click to continue">
 <meta property="og:image" content="https://freetomeet.github.io/meet-only/Blur.jpg">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://freetomeet.github.io/meet-only/">
 
 <!-- TWITTER CARD -->
 <meta name="twitter:card" content="summary_large_image">
@@ -19,14 +30,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
-// delay minimal agar Twitter dapat baca meta
-setTimeout(function() {
-    window.location.replace("https://dceceac.offergoaling.com/s/02cd4731a7993?subsource=TRAFEE&track=region");
-}, 3000);
-</script>
+<style>
+html,body {
+  height:100%;margin:0;font-family:Arial,Helvetica,sans-serif;
+  background:#111;color:#eee;display:flex;align-items:center;justify-content:center;
+}
+.box{max-width:520px;padding:24px;text-align:center;border-radius:12px;
+  background:rgba(255,255,255,0.05);}
+img{max-width:100%;border-radius:8px;margin-bottom:12px;}
+</style>
+
 </head>
 <body>
-Redirecting… please wait.
+  <div class="box">
+    <img src="https://freetomeet.github.io/meet-only/Blur.jpg" alt="preview">
+    <h1>free meeting</h1>
+    <p>Redirecting… please wait</p>
+  </div>
 </body>
 </html>

